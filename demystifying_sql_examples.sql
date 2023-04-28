@@ -193,7 +193,7 @@ SELECT
 	a.*, 
     b.ProductName 
 FROM OrderDetails AS a
-FULL OUTER JOIN Products AS b
+LEFT JOIN Products AS b
 ON a.ProductID = b.ProductID;
 
 -- Example 5b: FULL OUTER JOIN
